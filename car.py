@@ -4,6 +4,7 @@ class Car:
 # init = initialize 
 # set up parameters inside the ()
 # assign received arguments to attributes in __init__ method -> 
+    wheels = 4
     def __init__(self, make, model, year, color):
         self.make = make
         self.model = model
