@@ -5,10 +5,27 @@ class Vehicle(ABC):
     def go(self):
         pass
 
+    @abstractmethod
+    def stop(self):
+        pass
+
 class Car(Vehicle):
     def go(self):
         print("You drive the car")
+    
+    def stop(self):
+        print("This car is stopped")
 
 class Motorcycle(Vehicle):
     def go(self):
-        print("")
+        print("You ride the motorcycle")
+
+    def stop(self):
+        print("This motorcycle is stopped")
+    
+car = Car()
+motorcycle = Motorcycle()
+car.go()
+car.stop()
+motorcycle.go()
+motorcycle.stop()
